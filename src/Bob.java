@@ -16,7 +16,7 @@ public class Bob {
             else if (input.endsWith("!")) {
                 System.out.println("Bob: Whoa chill out!");
             }
-            else if (input.equals("")) {
+            else if (input.trim().equals("")) {
                 System.out.println("Bob: Fine, be that way!!!");
             }
             else {
