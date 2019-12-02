@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -77,7 +78,17 @@ public class Practice {
 //        System.out.println(y);
 //        System.out.println(z);
 
+//        int result = Math.max(1, 2);
+//        System.out.println(result);
 
+//        int result = (int) Math.round(Math.random() * 100);
+//        System.out.println(result);
+
+        // 10%
+        NumberFormat currency = NumberFormat.getCurrencyInstance();
+        String result = currency.format(1234567.891);
+        System.out.println(currency);
+        System.out.println(result);
 
 
     }
