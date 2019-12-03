@@ -9,7 +9,7 @@ public class ArraysExercises {
 
     public static Person[] addPerson(Person[] arr, Person newPerson) {
 
-        //use copyOf to s.o.u.t the passed in person arr
+        //use copyOf to s.out the passed in person arr
         Person[] newArr = Arrays.copyOf(arr, arr.length + 1);
         //getting end of an array and assigning a new person
         newArr[newArr.length-1] = newPerson;

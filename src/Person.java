@@ -3,27 +3,34 @@ public class Person {
 
     private String name;
     public String rel;
+    public String hairColor;
 
 
+    public void setHairColor(String color) {
+        //randomize hair color with arr
+        this.hairColor = color;
+
+    }
 
     // returns the person's name
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
     // changes the name property to the passed value
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
     //prints a message to the console using the person's name
-    public void sayHello(){
+    public void sayHello() {
         System.out.println("Hello world! from " + this.name);
     }
 
     //constructor for person obj name
-    public Person(String getName) {
-        this.name = getName;
+    public Person(String nameParam) {
+//        setHairColor();
+        this.name = nameParam;
     }
 
     public static void main(String[] args) {
@@ -58,7 +65,6 @@ public class Person {
         System.out.println(person1.getName());
         // Jane
         System.out.println(person2.getName());
-
 
 
     }
