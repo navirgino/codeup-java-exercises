@@ -13,6 +13,7 @@ public class Square extends Rectangle {
         //set both the length and width to the val of side
 //        this.side = side;
 
+
     }
 
 
