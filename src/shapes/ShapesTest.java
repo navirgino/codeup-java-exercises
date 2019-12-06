@@ -4,9 +4,11 @@ public class ShapesTest {
 
     public static void main(String[] args) {
 
-        Measurable myShape = new Square(2);
+        Measurable myShape = new Square(3);
         Measurable otherShape = new Rectangle(4, 1);
-        //get length and get width only work when implemented in the interface
+
+
+        //get length and get width only work when implemented in the interface, you will get a compile error
 //        System.out.println(myShape.getLength());
 //        System.out.println(myShape.getWidth());
         System.out.println(myShape.getArea() + " and " + myShape.getPerimeter());
