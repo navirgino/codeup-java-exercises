@@ -22,15 +22,52 @@ public class RevisitingOOP {
         //we assign these to private to only allow the car class to access these variables.
         ///
         //in Java, when you created a method in a class, it is then attached to all objects for that particular class
-        public void setModel(String model){
+
+        //setter/constructor
+
+        public void setCar(String model,
+                           String engine,
+                           String color,
+                           int doors,
+                           int wheels)
+        {
             this.model = model;
+            this.engine = engine;
+            this.color = color;
+            this.doors = doors;
+            this.wheels = wheels;
         }
+        //getters
+        public String getModel(){
+            return this.model;
+        }
+        public String getEngine(){
+            return this.engine;
+        }
+        public String getColor(){
+            return this.color;
+        }
+        public int getNumOfDoors(){
+            return this.doors;
+        }
+        public int getNumOfWheels(){
+            return this.wheels;
+        }
+
     }
 
     public static void main(String[] args) {
         Car porsche = new Car();
         Car honda = new Car();
-        porsche.model = "Carrerra";
+        porsche.setCar("Carrera", "Big engine", "red", 4, 4);
+
+
+        System.out.println(porsche.getModel());
+        System.out.println(porsche.getEngine());
+        System.out.println(porsche.getColor());
+        System.out.println(porsche.getNumOfDoors());
+        System.out.println(porsche.getNumOfWheels());
+
 
 
     }
