@@ -11,7 +11,6 @@ public class AnimalTest {
         dog.run();
         System.out.println("~~~~~~~~~~~~");
         dog.move(5);
+
     }
-
-
 }
