@@ -9,4 +9,21 @@ public class WarmingUp {
         return bucket;
     }
 
+    public static double exponentialMethod(double base, double exponent){
+        double bucket = base;
+        double remainder = exponent % 1;
+        double decimal = exponent - remainder;
+        for(int i = 1; i <= exponent; i++){
+            bucket += (base*bucket);
+        }
+        bucket *= base * decimal;
+        return bucket;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(exponentialMethod(4, 2));
+    }
 }
+
+
